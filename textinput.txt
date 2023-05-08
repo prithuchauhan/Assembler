@@ -1,0 +1,11 @@
+var X
+var A
+var B
+ld R1 $7
+ld R3 $188
+ld R2 A
+mov R4 $23
+mov R5 R6
+add R1 R2 R3
+sub R4 R5 R6
+exit:
