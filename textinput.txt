@@ -1,11 +1,18 @@
 var X
 var A
 var B
-ld R1 $7
-ld R3 $188
+ld R1 B
 ld R2 A
+mov R7 R8
+ld R4 G
+jgt branch
 mov R4 $23
-mov R5 R6
+mov R1 FLAGS
+st R2 FLAGS
+hlt
+branch: mov R5 R6
+jlt exit
 add R1 R2 R3
 sub R4 R5 R6
-exit:
+jmp undefinedlabel
+mov R5 R5
